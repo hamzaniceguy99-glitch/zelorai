@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Zelorai — 3D printing coaching: stop printing spaghetti</title>
+<meta name="description" content="Online 3D printing coaching: fixing failed prints, understanding slicer settings, designing parts in CAD, and choosing materials. Photo diagnosis of your prints.">
+<link rel="canonical" href="https://zelorai.shop/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://zelorai.shop/">
+<meta property="og:site_name" content="Zelorai">
+<meta property="og:locale" content="en_US">
+<meta property="og:title" content="Zelorai — 3D printing coaching: stop printing spaghetti">
+<meta property="og:description" content="Online 3D printing coaching: fixing failed prints, understanding slicer settings, designing parts in CAD, and choosing materials. Photo diagnosis of your prints.">
+<meta name="theme-color" content="#160b04">
+
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@400;500;600;700&family=Inter:wght@400..700&display=swap">
+<link rel="stylesheet" href="assets/css/style.css">
+
+<!-- Thème appliqué avant le premier rendu (évite le flash) -->
+<script>
+document.documentElement.classList.remove('no-js');
+(function(){try{var t=localStorage.getItem('site-theme');if(t){document.documentElement.setAttribute('data-theme',t);}}catch(e){}})();
+</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "Zelorai",
+  "url": "https://zelorai.shop/",
+  "email": "contact@zelorai.shop",
+  "description": "Online 3D printing coaching: fixing failed prints, understanding slicer settings, designing parts in CAD, and choosing materials. Photo diagnosis of your prints.",
+  "areaServed": "US",
+  "knowsLanguage": "en"
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<header class="site-header">
+  <nav class="wrap nav" aria-label="Main navigation">
+    <a class="brand" href="index.html">
+      <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect class="bm-bg" width="64" height="64" rx="16"/>
+        <g class="bm-ic" transform="translate(14 14) scale(1.5)" fill="none" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="18" height="17" rx="2.5"/><path d="M3 9h18M9 9v11.5"/></g>
+      </svg>
+      <span>Zelorai<span class="brand__sub">3D printing coaching</span></span>
+    </a>
+
+    <ul class="nav__links" id="nav-links">
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="programs.html">Programs</a></li>
+      <li><a href="index.html#pricing">Pricing</a></li>
+      <li><a href="about.html">How we work</a></li>
+      <li><a href="contact.html">Contact</a></li>
+      <li><a class="btn btn--primary" href="contact.html">Free intro call</a></li>
+    </ul>
+
+    <div class="nav__cta">
+      <button class="theme-toggle" type="button" aria-label="Switch to dark theme">
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M4.9 4.9l1.4 1.4m11.4 11.4 1.4 1.4M19.1 4.9l-1.4 1.4M6.3 17.7l-1.4 1.4"/></svg>
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+      </button>
+      <a class="btn btn--primary" href="contact.html">Free intro call</a>
+      <button class="nav__toggle" type="button" aria-expanded="false" aria-controls="nav-links" aria-label="Open menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </nav>
+</header>
+
+<main id="main">
+
+<section class="hero">
+  <div class="wrap hero__inner">
+    <div>
+      <span class="eyebrow hero__eyebrow">Online · FDM and resin · Vendor-neutral</span>
+      <h1>Stop printing<br> <em>spaghetti</em>.</h1>
+      <p class="hero__lede">Failed prints have a small number of causes and a photograph usually names the culprit. Guessing at settings from forum threads is what turns one bad print into a week of them.</p>
+
+      <div class="hero__actions">
+        <a class="btn btn--primary btn--lg" href="contact.html">Book my free intro call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+        <a class="btn btn--on-dark btn--lg" href="programs.html">See the programs</a>
+      </div>
+
+      <ul class="hero__proof">
+        <li><span class="stat__num">6–12</span><span class="stat__label">weeks per program</span></li>
+        <li><span class="stat__num">24 h</span><span class="stat__label">for a print diagnosis</span></li>
+        <li><span class="stat__num">10 max</span><span class="stat__label">in a live session</span></li>
+        <li><span class="stat__num">$0</span><span class="stat__label">intro call</span></li>
+      </ul>
+    </div>
+
+    <div class="hero__art">
+      <svg viewBox="0 0 620 540" role="img" aria-label="A 3D printing program in week 3 of 8, showing this week's tasks, the next live session and coach feedback.">
+        <defs>
+          <linearGradient id="hbg" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0" stop-color="#2d231d"/><stop offset="1" stop-color="#120903"/>
+          </linearGradient>
+        </defs>
+        <rect width="620" height="540" rx="22" fill="url(#hbg)"/>
+        <circle cx="500" cy="96" r="150" fill="#ea580c" opacity=".16"/>
+        <circle cx="96" cy="470" r="120" fill="#ea580c" opacity=".08"/>
+
+        <g style="font-family: var(--font-body)">
+          <!-- Carte programme -->
+          <rect x="70" y="62" width="390" height="370" rx="20" fill="#fbf6f2"/>
+          <text x="100" y="106" font-size="12" font-weight="650" letter-spacing="1.6" fill="#7d756f">PROGRAM · WEEK 3 OF 8</text>
+          <text x="100" y="146" font-size="27" font-weight="700" fill="#160b04" style="font-family: var(--font-display)">Prints that finish</text>
+          <rect x="100" y="170" width="320" height="10" rx="5" fill="#dbd5d1"/>
+          <rect x="100" y="170" width="122" height="10" rx="5" fill="#ea580c"/>
+          <text x="100" y="206" font-size="13" fill="#7d756f">38 % complete</text>
+          <circle cx="112" cy="250" r="11" fill="#ea580c"/><path d="M106.5 250l4 4 7-7.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="134" y="255" font-size="15.5" fill="#7d756f" font-weight="450">Level the bed properly</text>
+          <circle cx="112" cy="288" r="11" fill="#ea580c"/><path d="M106.5 288l4 4 7-7.5" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/><text x="134" y="293" font-size="15.5" fill="#7d756f" font-weight="450">Run a temp tower</text>
+          <circle cx="112" cy="326" r="10" fill="none" stroke="#dbd5d1" stroke-width="2"/><text x="134" y="331" font-size="15.5" fill="#160b04" font-weight="560">One setting at a time</text>
+          <circle cx="112" cy="364" r="10" fill="none" stroke="#dbd5d1" stroke-width="2"/><text x="134" y="369" font-size="15.5" fill="#160b04" font-weight="560">Photograph each failure</text>
+
+          <!-- Carte séance -->
+          <rect x="392" y="296" width="196" height="148" rx="18" fill="#2b211b" stroke="#ffffff" stroke-opacity=".08"/>
+          <rect x="416" y="320" width="46" height="46" rx="12" fill="#ea580c"/>
+          <g transform="translate(427 331)" fill="none" stroke="#ffffff" color="#ffffff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="6" width="13" height="12" rx="2.5"/><path d="M15.5 10.5 21.5 7v10l-6-3.5z"/></g>
+          <text x="416" y="396" font-size="15" font-weight="650" fill="#fbf6f2">Live session</text>
+          <text x="416" y="420" font-size="13" fill="#f08750">Wed · 8:00 PM</text>
+
+          <!-- Retour du coach -->
+          <rect x="34" y="446" width="336" height="72" rx="16" fill="#fbf6f2" stroke="#dbd5d1"/>
+          <circle cx="72" cy="482" r="20" fill="#f8dac9"/>
+          <g transform="translate(62 472) scale(.84)" fill="none" stroke="#983908" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12a8 8 0 0 1-11.6 7.1L4 20l1-4.6A8 8 0 1 1 21 12z"/></g>
+          <text x="104" y="476" font-size="13.5" font-weight="700" fill="#160b04">Coach feedback</text>
+          <text x="104" y="498" font-size="13" fill="#7d756f">« First layer, not the filament »</text>
+        </g>
+      </svg>
+    </div>
+  </div>
+</section>
+
+<div class="marquee" aria-hidden="true">
+  <div class="marquee__track"><span>First layer</span><span>Adhesion</span><span>Stringing</span><span>Temp towers</span><span>Supports</span><span>Slicer profiles</span><span>CAD</span><span>Tolerances</span><span>PETG</span><span>Post-processing</span><span>First layer</span><span>Adhesion</span><span>Stringing</span><span>Temp towers</span><span>Supports</span><span>Slicer profiles</span><span>CAD</span><span>Tolerances</span><span>PETG</span><span>Post-processing</span></div>
+</div>
+
+<section class="section wrap" id="programs">
+  <div class="section-head reveal">
+    <span class="eyebrow">The programs</span>
+    <h2>Four programs, from failures to finished parts</h2>
+    <p>Everything is worked on your printer, your filament and the prints that went wrong this week.</p>
+  </div>
+  <div class="grid grid--4 reveal-group">
+    <a class="card" href="programs.html#failures">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1.2" fill="currentColor"/></svg></div>
+      <h3>Prints that finish</h3>
+      <p>First layer, adhesion, stringing and warping — the short list of causes behind nearly every failure.</p>
+      <ul class="tags"><li>First layer</li><li>Adhesion</li><li>Stringing</li><li>Warping</li></ul>
+      <span class="arrow-link">See the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="card" href="programs.html#slicer">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="3.5" width="18" height="17" rx="2.5"/><path d="M3 9h18M9 9v11.5"/></svg></div>
+      <h3>The slicer</h3>
+      <p>Profiles, walls, infill and supports: knowing what each setting does instead of copying someone's file.</p>
+      <ul class="tags"><li>Profiles</li><li>Walls</li><li>Supports</li><li>Orientation</li></ul>
+      <span class="arrow-link">See the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="card" href="programs.html#cad">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M8.5 7 3.5 12l5 5M15.5 7l5 5-5 5M13.5 4.5l-3 15"/></svg></div>
+      <h3>Designing parts</h3>
+      <p>Sketching, dimensions and tolerances in free CAD, so you can print the bracket that doesn't exist online.</p>
+      <ul class="tags"><li>CAD</li><li>Sketching</li><li>Tolerances</li><li>Fit</li></ul>
+      <span class="arrow-link">See the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+    <a class="card" href="programs.html#materials">
+      <div class="card__icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 21.5c-4 0-7-2.8-7-6.7 0-3.4 2.4-5.6 4-7.8.6 1.6 1.6 2.6 2.8 3 .2-3.1 1.4-5.6 3.7-7.5.3 3 1.6 4.8 3 6.7 1.1 1.5 1.5 3 1.5 4.6 0 4.2-3.3 7.7-8 7.7z"/></svg></div>
+      <h3>Materials &amp; finishing</h3>
+      <p>PLA, PETG, ABS and resin — where each belongs, how to store them, and finishing that looks deliberate.</p>
+      <ul class="tags"><li>PLA</li><li>PETG</li><li>Resin</li><li>Finishing</li></ul>
+      <span class="arrow-link">See the program <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+    </a>
+  </div>
+</section>
+
+<section class="section section--flush wrap" id="how-it-works">
+  <div class="section-head reveal">
+    <span class="eyebrow">How it works</span>
+    <h2>Photograph the failure</h2>
+    <p>A close-up of a bad first layer or a stringy tower tells a coach more than three paragraphs of description.</p>
+  </div>
+  <div class="grid grid--4 steps reveal-group">
+    <article class="step">
+      <h3>Free intro call</h3>
+      <p>Twenty minutes on your printer, your slicer and what keeps failing.</p>
+    </article>
+    <article class="step">
+      <h3>Photograph every failure</h3>
+      <p>Close-up and wide, plus the filament and settings you used.</p>
+    </article>
+    <article class="step">
+      <h3>A named cause</h3>
+      <p>Within 24 hours: what went wrong, and the single change to test.</p>
+    </article>
+    <article class="step">
+      <h3>Calibration that sticks</h3>
+      <p>Profiles saved per filament, so you stop starting over.</p>
+    </article>
+  </div>
+</section>
+
+<section class="section wrap" id="pricing">
+  <div class="section-head section-head--center reveal">
+    <span class="eyebrow">Plans</span>
+    <h2>Pick your level of support</h2>
+    <p>Month to month, cancel anytime. The 20-minute intro call is free.</p>
+  </div>
+  <div class="grid grid--3 plans reveal-group">
+    <article class="plan">
+      
+      <h3>Group sessions</h3>
+      <p class="plan__desc">A weekly session diagnosing members' failed prints together.</p>
+      <p class="plan__price">$25<span class="plan__period">/ month</span></p>
+      <ul class="plan__features">
+        <li>One 60-minute live session each week</li>
+        <li>Groups of 10 people maximum</li>
+        <li>Members' failures diagnosed live</li>
+        <li>Calibration print library</li>
+        <li>Replays for 30 days</li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="contact.html">Join the group</a>
+    </article>
+    <article class="plan plan--featured">
+      <span class="plan__tag">Most popular</span>
+      <h3>Coaching essentials</h3>
+      <p class="plan__desc">A coach on your machine, your profiles and your prints.</p>
+      <p class="plan__price">$69<span class="plan__period">/ month</span></p>
+      <ul class="plan__features">
+        <li>Personal 6 to 12 week program</li>
+        <li>Print diagnosis within 24 hours</li>
+        <li>One 30-min session every two weeks</li>
+        <li>Profiles built for your printer</li>
+        <li>Access to all group sessions</li>
+      </ul>
+      <a class="btn btn--primary btn--block" href="contact.html">Get started</a>
+    </article>
+    <article class="plan">
+      
+      <h3>Project support</h3>
+      <p class="plan__desc">For designing a real part, a small production run, or a printer that fights you.</p>
+      <p class="plan__price">$149<span class="plan__period">/ month</span></p>
+      <ul class="plan__features">
+        <li>One 45-min session each week</li>
+        <li>Replies within 24 hours</li>
+        <li>CAD work reviewed and corrected</li>
+        <li>Materials and tolerances planned with you</li>
+        <li>Access to all group sessions</li>
+      </ul>
+      <a class="btn btn--ghost btn--block" href="contact.html">Talk it through</a>
+    </article>
+  </div>
+  <p class="plans-note">Prices in USD. Cancel anytime, no contract.</p>
+</section>
+
+<section class="section section--flush wrap">
+  <div class="split reveal">
+    <div class="split__art">
+      <svg viewBox="0 0 520 420" role="img" aria-label="Example of a typical week: Tune, Session, Print, Photos, Review.">
+        <rect width="520" height="420" rx="20" fill="#faebe2"/>
+        <circle cx="450" cy="54" r="96" fill="#ea580c" opacity=".12"/>
+        <g style="font-family: var(--font-body)">
+        <text x="40" y="62" font-size="22" font-weight="700" fill="#160b04" style="font-family: var(--font-display)">A typical week</text>
+        <text x="80" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#7d756f">Mon</text>
+        <rect x="40" y="112" width="80" height="262" rx="12" fill="#fbf6f2"/>
+        <rect x="46" y="133" width="68" height="85" rx="9" fill="#f7cdb6"/>
+        <text x="80" y="155" text-anchor="middle" font-size="11" font-weight="650" fill="#160b04">Tune</text>
+        <text x="172" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#7d756f">Tue</text>
+        <rect x="132" y="112" width="80" height="262" rx="12" fill="#fbf6f2"/>
+        <rect x="138" y="208" width="68" height="105" rx="9" fill="#ea580c"/>
+        <text x="172" y="230" text-anchor="middle" font-size="11" font-weight="650" fill="#ffffff">Session</text>
+        <text x="264" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#7d756f">Wed</text>
+        <rect x="224" y="112" width="80" height="262" rx="12" fill="#fbf6f2"/>
+        <rect x="230" y="148" width="68" height="75" rx="9" fill="#f7cdb6"/>
+        <text x="264" y="170" text-anchor="middle" font-size="11" font-weight="650" fill="#160b04">Print</text>
+        <text x="356" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#7d756f">Thu</text>
+        <rect x="316" y="112" width="80" height="262" rx="12" fill="#fbf6f2"/>
+        <rect x="322" y="243" width="68" height="85" rx="9" fill="#160b04"/>
+        <text x="356" y="265" text-anchor="middle" font-size="11" font-weight="650" fill="#fbf6f2">Photos</text>
+        <text x="448" y="100" text-anchor="middle" font-size="13" font-weight="600" fill="#7d756f">Fri</text>
+        <rect x="408" y="112" width="80" height="262" rx="12" fill="#fbf6f2"/>
+        <rect x="414" y="173" width="68" height="115" rx="9" fill="#f7cdb6"/>
+        <text x="448" y="195" text-anchor="middle" font-size="11" font-weight="650" fill="#160b04">Review</text>
+        </g>
+      </svg>
+    </div>
+    <div>
+      <span class="eyebrow">How we work</span>
+      <h2>Vendor-neutral, and careful about safety</h2>
+      <p>Zelorai sells no printers, filament or upgrades and takes nothing from any manufacturer. Most people need better calibration far more than a new machine, and that advice is hard to give when a shop is paying for it.</p>
+      <p>We also stay away from two things: modifications that disable thermal runaway protection or other safety features, and anything involving mains wiring. Resin and ABS get honest treatment on ventilation, gloves and disposal rather than a shrug.</p>
+      <p><a class="arrow-link" href="about.html">See how we work <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a></p>
+    </div>
+  </div>
+</section>
+
+<section class="section section--flush wrap" id="faq">
+  <div class="section-head section-head--center reveal">
+    <span class="eyebrow">Frequently asked</span>
+    <h2>The questions we get most</h2>
+  </div>
+  <div class="faq reveal">
+    <details>
+      <summary>Which printer should I buy?</summary>
+      <p>We'll give you an honest recommendation for your budget and earn nothing from it. If you already own something decent, the answer is usually to calibrate it.</p>
+    </details>
+    <details>
+      <summary>My first layer never sticks.</summary>
+      <p>Almost always bed level, nozzle height or surface prep, in that order. Send a photo of the layer and we'll tell you which.</p>
+    </details>
+    <details>
+      <summary>Do you cover resin printing?</summary>
+      <p>Yes, including the parts people skip: ventilation, gloves, washing, curing and disposing of uncured resin properly.</p>
+    </details>
+    <details>
+      <summary>Can you help me repair my printer?</summary>
+      <p>We can diagnose and talk you through routine maintenance. We don't service machines, and we won't advise on mains wiring or on removing safety protections.</p>
+    </details>
+    <details>
+      <summary>Can I sell what I print?</summary>
+      <p>Often, but check the license on any model you didn't design and respect patents and trademarks. Designing your own avoids most of it, which is what the CAD program is for.</p>
+    </details>
+    <details>
+      <summary>Can I cancel anytime?</summary>
+      <p>Yes. No contract, no minimum term. Access stays open until the end of the month you already paid for.</p>
+    </details>
+  </div>
+</section>
+
+<section class="wrap section--tight">
+  <div class="cta-band reveal">
+    <h2>Got a print that keeps failing?</h2>
+    <p>Twenty minutes on your printer, your settings and what the photo is telling us. Free.</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary btn--lg" href="contact.html">Book my free intro call <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14M13 6l6 6-6 6"/></svg></a>
+      <a class="btn btn--on-dark btn--lg" href="programs.html">See the programs</a>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <a class="brand" href="index.html">
+          <svg class="brand__mark" viewBox="0 0 64 64" aria-hidden="true">
+        <rect class="bm-bg" width="64" height="64" rx="16"/>
+        <g class="bm-ic" transform="translate(14 14) scale(1.5)" fill="none" stroke-width="2.1" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="3.5" width="18" height="17" rx="2.5"/><path d="M3 9h18M9 9v11.5"/></g>
+      </svg>
+          <span>Zelorai<span class="brand__sub">3D printing coaching</span></span>
+        </a>
+        <p>3D printing coaching: prints that stop failing, slicer settings you understand, designing your own parts, and materials chosen for the job.</p>
+      </div>
+
+      <div class="footer__col">
+        <h4>Programs</h4>
+        <ul>
+          <li><a href="programs.html#failures">Prints that finish</a></li>
+          <li><a href="programs.html#slicer">The slicer</a></li>
+          <li><a href="programs.html#cad">Designing parts</a></li>
+          <li><a href="programs.html#materials">Materials &amp; finishing</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Zelorai</h4>
+        <ul>
+          <li><a href="about.html">How we work</a></li>
+          <li><a href="index.html#how-it-works">How it works</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="index.html#faq">FAQ</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h4>Legal</h4>
+        <ul>
+          <li><a href="legal.html">Legal &amp; policies</a></li>
+          <li><a href="legal.html#privacy">Privacy</a></li>
+          <li><a href="legal.html#terms">Terms</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Zelorai. All rights reserved.</p>
+      <p><a href="mailto:contact@zelorai.shop">contact@zelorai.shop</a></p>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
